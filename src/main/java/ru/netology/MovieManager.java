@@ -30,6 +30,7 @@ public class MovieManager {
         tmp[tmp.length - 1] = item;
         movies = tmp;
     }
+
     // вывод всех фильмов в порядке добавления
     public MovieManager[] findAll() {
 
@@ -44,11 +45,11 @@ public class MovieManager {
         } else {
             resultLength = limitMovie;
         }
-        MovieManager[] rezult = new MovieManager[resultLength];
+        MovieManager[] result = new MovieManager[resultLength];
         for (int y = 0; y < resultLength; y++) {
-            rezult[y] = movies[movies.length - 1 - y];
+            result[y] = movies[movies.length - 1 - y];
         }
-        return rezult;
+        return result;
     }
 }
 
