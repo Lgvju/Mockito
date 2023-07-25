@@ -24,8 +24,8 @@ public class MovieManager {
 
     public void addFilms(MovieManager item) {
         MovieManager[] tmp = new MovieManager[movies.length + 1];
-        for (int y = 0; y < movies.length; y++) {
-            tmp[y] = movies[y];
+        for (int i = 0; i < movies.length; i++) {
+            tmp[i] = movies[i];
         }
         tmp[tmp.length - 1] = item;
         movies = tmp;
@@ -46,8 +46,8 @@ public class MovieManager {
             resultLength = limitMovie;
         }
         MovieManager[] result = new MovieManager[resultLength];
-        for (int y = 0; y < resultLength; y++) {
-            result[y] = movies[movies.length - 1 - y];
+        for (int i = 0; i < resultLength; i++) {
+            result[i] = movies[movies.length - 1 - i];
         }
         return result;
     }
